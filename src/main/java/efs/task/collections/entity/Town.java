@@ -1,8 +1,9 @@
 package efs.task.collections.entity;
 
 import java.util.List;
-
-public class Town {
+import java.util.Objects;
+//
+public class Town implements Comparable<Town> {
     private String townName;
     private List<String> startingHeroClasses;
 
@@ -22,17 +23,23 @@ public class Town {
     //TODO implementacja metody equal porównująca obiekty Town na podstawie tylko townName.
     @Override
     public boolean equals(Object o) {
-        return true;
+        Town town = (Town) o;
+        return Objects.equals(this.getTownName(), town.getTownName());
     }
 
     //TODO implementacja metody equal biorąca pod uwagę tylko townName.
     @Override
     public int hashCode() {
-        return 1;
+        return Objects.hash(this.getTownName());
     }
 
     @Override
     public String toString() {
         return "Miasto :" + townName;
+    }
+
+    @Override
+    public int compareTo(Town town) {
+        return this.getTownName().compareTo(town.getTownName());
     }
 }
