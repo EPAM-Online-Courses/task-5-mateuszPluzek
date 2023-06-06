@@ -30,7 +30,7 @@ public class DataProvider {
 
         return listOfTowns;
     }
-
+//
     //TODO Analogicznie do getTownsList utwórz listę miast na podstawie tablicy Data.DLCTownsArray
     public List<Town> getDLCTownsList() {
         List<Town> listOfDLCTowns = new ArrayList<>();

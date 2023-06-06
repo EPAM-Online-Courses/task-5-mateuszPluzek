@@ -5,7 +5,7 @@ import efs.task.collections.entity.Hero;
 import efs.task.collections.entity.Town;
 
 import java.util.*;
-
+//
 public class GameLobby {
 
     public static final String HERO_NOT_FOUND = "Nie ma takiego bohatera ";

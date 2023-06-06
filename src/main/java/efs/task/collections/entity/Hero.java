@@ -18,7 +18,7 @@ public class Hero {
     public String getHeroClass() {
         return heroClass;
     }
-
+//
     //TODO implementacja metody equal porównująca obiekty Hero na podstawie pól name i heroClass.
     @Override
     public boolean equals(Object o) {
